@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Boogaloo&display=swap');
+
+$font: 'Boogaloo', cursive;
+$fontColor: #703708;
+$backgroundColor: #dec4a2;
+
+.calendar{
+    font-family: $font;
+    color: $fontColor;
+    background-color: $backgroundColor;
+    height: 100vh;
+    padding: 10px;
+}
+
+.header{
+    display: flex;
+
+    &__month{
+        font-size: 3em; 
+        text-transform: uppercase;
+        margin-right: 10px;
+    }
+    
+    &__buttons{
+        display: flex;
+        align-items: flex-end;
+        button{
+            font-size: 3em;
+            background-color: transparent;
+            border: none;
+            color: $fontColor;
+        }
+
+        button:hover{
+            cursor: pointer;
+        }
+    }
+}
+
+
+
+table{
+    width: 100%;
+    height: 75%;
+}
+
+.dayWeek{
+    font-size: 2em; 
+    width: 100%;
+    height: 30px;
+
+    th{
+        width: 13%;
+    }
+}
+
+.dayMonth{
+    width: 100%;
+    
+    td{
+        height: 90px;
+        text-align: center;
+        padding-left: 3px;
+
+        div{
+            background-color: gainsboro;
+            height: 100%;
+            width: 95%;
+            text-align: left;
+            font-size: 1.8em;
+            padding-left: 8px;
+            border-radius: 7px;
+
+        }
+
+        div:hover{
+            cursor: pointer;
+            background-color: #d2d2d2;
+        }
+    }
+
+    td:last-child{
+        color: gray;
+    }
+
+    .currentDay{
+        border-style: solid;
+        border-color: $fontColor;
+    }
+}

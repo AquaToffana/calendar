@@ -1,0 +1,12 @@
+.App{
+    display: flex;
+
+    &__calendar{
+        width: 60%;
+    }
+
+    &__day{
+        width: 40%;
+        background-color: #dec4a2;
+    }
+}
